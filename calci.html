@@ -1,0 +1,84 @@
+<HTML>
+<head>
+<title>shiv's calculator</title>
+<style>
+body{   
+       margin:2px;
+       padding:2px;
+	   indent:4px;
+	}
+        div{ height:270px;
+	        width:270px;
+			border:5px solid black;
+			transform:translate(570px,200px);
+	        background-color:pink;
+		    border-radius:30px;
+	      box-shadow:10px 5px 40px black;
+		  
+		  }
+input{                                               
+
+margin:6px;
+padding:6px;          		  
+border-radius:40px;	}
+
+h1{
+         transform:translate(600px,240px);
+        font-size:50px;
+        font-family:sans serif;	  
+                                                                     
+																	  
+	  }
+	  h1:hover{      
+	  color:pink;
+	  font-size:55px;
+	   }
+	   
+input:hover{   
+               color:pink;
+                 text-shadow:3px 3px 3px pink;
+ BORDER-RADIUS:30PX;                          				 }	 
+.DESIGN:HOVER{    FONT-SIZE:25PX;
+                    COLOR:PINK;												
+					BORDER-RADIUS:30PX;
+}										 
+										 
+	   
+div:hover{   height:300px;
+width:300px;                             }	  
+	  
+	  
+
+
+
+</style>
+</head>
+<body>
+<h1>calculator</h1>
+<div>
+<form  name="form1" class="calci" action="calci.html" method="POST">
+<input type="textbox" name="answer" id="display">
+<input type="button" class="design" value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)"><br>
+<input type="button" class="design" value="1" onclick="form1.answer.value+='1'">
+<input type="button" class="design" value="2" onclick="form1.answer.value+='2'">
+<input type="button" class="design" value="3" onclick="form1.answer.value+='3'">
+<input type="button" class="design" value="*" onclick="form1.answer.value+='*'">
+<inPUT TYPE="BUTTON" CLASS="DESIGN" VALUE="-" ONCLICK="FORM1.ANSWER.VALUE+='-'"><BR>
+<input type="button" class="design" value="4" onclick="form1.answer.value+='4'">
+<input type="button" class="design" value="5" onclick="form1.answer.value+='5'">
+<input type="button" class="design" value="6" onclick="form1.answer.value+='6'">
+<input type="button" class="design" value="+" onclick="form1.answer.value+='+'">
+<input type="button" class="design" value="/" onclick="form1.answer.value+='/'"><br>
+<input type="button" class="design" value="7" onclick="form1.answer.value+='7'">
+<input type="button" class="design" value="8" onclick="form1.answer.value+='8'">
+<input type="button" class="design" value="9" onclick="form1.answer.value+='9'">
+<input type="button" class="design" value="0" onclick="form1.answer.value+='0'">
+<input type="button" class="design" value="=" onclick="form1.answer.value=eval(form1.answer.value)"><br>
+<input type="button" class="design" value="C" onclick="form1.answer.value=''">
+
+
+</form>
+</div>
+</body>
+</html>		
+		
